@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Doctor's Page</title>
+		<link rel="stylesheet" href="Admin.css">
+		<script src="jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#vu').click(function(){
+                       $.get('viewuser.php',function(result){
+                        $('#doctordetails').css('display','none');
+                        $('#resp').html(result);
+                       });
+                });
+            }); 
+        </script>
+
+	</head>
+	<style>
+	.select {
+    width: 150px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f1f1f1;
+   }
+	</style>
+<body>
+		<nav class="nav-main">
+ 			<ul>
+ 				<li class="active">
+ 					<a href="#" class="nav-item">Details</a>
+ 				</li>
+ 				<li>
+ 					<span id="vu" style="cursor:pointer" class="nav-item">View User</span>
+ 				</li>
+ 				<li >
+ 					<a href="#" class="nav-item">View Request for Oppintment</a>
+ 				</li>
+ 				<li>
+ 					<a href="e-healthcare.html" class="nav-item">Logout</a>
+ 				</li>
+ 			</ul>
+ 		</nav>
+ 		<div id="resp"  style="border:none; position: absolute; margin:100px 0px 5% 0px;width:100%;">
+        </div>
+ 		<div id="doctordetails">
+
+ 		</div>
+</body>
+</html>

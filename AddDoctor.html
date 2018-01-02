@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<title>Admin Page(Add Doctors)</title>
+		<link rel="stylesheet" href="Admin.css">
+        <script src="jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#vd').click(function(){
+                       $.get('viewdoctor.php',function(result){
+                        $('#adddoctorform').css('display','none');
+                        $('#resp').html(result);
+                       });
+                });
+            }); 
+        </script>
+        <script>
+            $(document).ready(function(){
+                $('#vu').click(function(){
+                       $.get('viewuser.php',function(result){
+                        $('#adddoctorform').css('display','none');
+                        $('#resp').html(result);
+                       });
+                });
+            }); 
+        </script>
+	</head>
+	<style>
+	.select {
+    width: 150px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f1f1f1;
+   }
+	</style>
+<body>
+
+		<nav class="nav-main">
+ 			<ul>
+ 				<li class="active">
+ 					<a href="e-healthcare.html" class="nav-item">Home</a>
+ 				</li>
+ 				<li>
+ 					<a href="AddDoctor.html" class="nav-item">Add Doctor</a>
+ 				</li>
+ 				<li >
+ 					<span id="vd" style="cursor:pointer" class="nav-item">View Doctor</span>
+ 				</li>
+ 				<li>
+ 					<span id="vu" style="cursor:pointer" class="nav-item">View User</span>
+ 				</li>
+ 				<li>
+ 					<a href="#" class="nav-item">View Feedback</a>
+ 				</li>
+ 				<li>
+ 					<a href="#" class="nav-item">Logout</a>
+ 				</li>
+ 			</ul>
+ 		</nav>
+       <center>
+        <div id="resp"  style="border:none; position: absolute; margin:100px 0px 5% 0px;width:100%;">
+        </div>
+        </center>
+ 		<div style="border:none; position: absolute; margin:100px 0px 0px 500px; height:500px;width:430px;" id="adddoctorform">
+ 		 <p style="font-family:Forte;font-size:20; text-align:center; color: #ff006e;"><u>Add Doctors</u></p>
+         <form action="demo.php" method="post">
+ 		 <table>
+ 		 	<tr>
+ 			 <td><label>Doctor Id</label><input type="text" name="txt1" required /><br></td>
+ 			 <td><label>Type</label>&nbsp<select id="type" name="typ" class="select">
+     		 		 <option value="Bone">Bone</option>
+     			 	<option value="GeneralPhy">General Physician</option>
+     			 	<option value="Heart">Heart</option>
+    			</select>
+    		</td><br>
+ 			</tr>
+ 			<tr>
+ 			 <td><label>Name</label><input type="text" name="txt3" required /></td>
+ 			 <td><label>Password</label><input type="text" name="txt4" required /></td>
+ 			</tr>
+ 			<tr>
+ 			 <td><label>Qualifiction</label><input type="text" name="txt5" required /></td>
+ 			 <td><label>Mobile No.</label><input type="text" name="txt6" required /></td>
+ 			</tr>
+ 			<tr>
+ 			 <td><label>E-mail Id</label><input type="text" name="txt7" required /></td>
+ 			</tr>
+ 			<tr>
+ 			 <td><button type="submit" value="submit" >Submit</button>
+ 			 <button type="Reset" value="submit" >Reset</button></td>
+ 			</tr>
+ 		 </table>
+         </form>
+ 		</div>
+</body>
+</html>

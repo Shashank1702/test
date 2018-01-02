@@ -1,0 +1,282 @@
+@keyframes layer2Anim{
+                0%{
+                    opacity: 0;
+                }
+                17%{
+                    opacity: 0;
+                }
+                33%{
+                    opacity: 1;
+                }
+                50%{
+                    opacity: 1;
+                }
+                67%{
+                    opacity: 0;
+                }
+                
+                100%{
+                    opacity: 0;
+                }
+            }
+            @keyframes layer3Anim{
+                0%{
+                    opacity: 0;
+                }
+                17%{
+                    opacity: 1;
+                }
+                33%{
+                    opacity: 1;
+                }
+                
+                50%{
+                    opacity: 0;
+                }
+                67%{
+                    opacity: 0;
+                }
+                83%{
+                    opacity: 1;
+                }
+                
+                100%{
+                    opacity: 0;
+                }
+            }
+            @keyframes layer4Anim{
+                0%{
+                    opacity: 0;
+                }
+                17%{
+                    opacity: 0;
+                }
+                33%{
+                    opacity: 1;
+                }
+                
+                50%{
+                    opacity: 0;
+                }
+                67%{
+                    opacity: 1;
+                }
+                83%{
+                    opacity: 1;
+                }
+                
+                100%{
+                    opacity: 0;
+                }
+            }
+            @keyframes layer5Anim{
+                0%{
+                    opacity: 0;
+                }
+                50%{
+                    opacity: 0;
+                }
+                67%{
+                    opacity: 1;
+                }
+                83%{
+                    opacity: 1;
+                }
+                
+                100%{
+                    opacity: 0;
+                }
+            }
+                 
+.back
+{
+    background-image: url("20.jpg");
+    margin-left: 1px;
+    margin-right: 3px;
+    margin-top: 9px;
+    height:120px;
+    width: 1128px;
+}
+
+
+.ad
+{
+    font-family:Cambria;
+    font-size: 31;
+    color:goldenrod;
+    margin-top: 32px;
+    margin-left: 50px;
+    text-shadow:1px 2px 1px goldenrod,0px 0px 0px black,0px 2px 5px blue ;
+    border-radius: 80%;
+}
+.ad1
+{
+    font-family: Utsaah;
+    font-size:20;
+    color:gold;
+    margin-top: 2px;
+    text-shadow:0px 0px 0px ,0px 0px 0px black,0px 0px 0px skyblue;
+}
+.ad2
+{
+    font-family: Imprint MT Shadow;
+    font-size: 12;
+    color: skyblue;
+    margin-left: 150px;
+    margin-top: -20px;
+}
+.maindiv{
+    background-image: url("bk.jpg");
+    background-size: cover;
+    height: 470px;
+}
+.back1
+{
+    opacity: 0.9;
+    margin-top: -313px;
+    width:83.6%;
+    height:62%;
+    border-radius: 25%;
+    background-size: cover;
+    
+}
+
+/*RESETS*/
+            *{
+                box-sizing: border-box;
+            }
+            html,body{
+                margin: 0;
+                padding: 0;
+            }
+            .slideshow{
+                position: relative;
+            }
+            .placeholder{
+                width: 100%;
+                visibility: hidden;
+            }
+            .layer1, .layer2, .layer3, .layer4, .layer5{
+                position: absolute;
+                width: 98%;
+                height: 400px;
+                top: 0;
+                left: 0;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-top: 1px;
+                margin-left: 10px;
+                border-radius: 25%;
+                opacity: 0.9;
+                filter :alpha;
+            }
+            .layer1{
+                background-image: url("2y.jpg");
+                background-attachment: fixed;
+            }
+            .layer1 p{
+                position: relative;
+                font-size: 34px;
+                color: blue;
+                text-shadow: 3px 3px 6px goldenrod, 0px 0px 0px black, 0px 2px 5px white;
+                text-align: center;
+                top: 71%;
+                background-attachment: fixed;
+            }
+            .layer2{
+                background-image: url("3y.jpg");
+                background-attachment: fixed;
+                animation:layer2Anim 12s infinite;
+            }
+            .layer2 p{
+                position: relative;
+                font-size: 34px;
+                color: blue;
+                text-shadow: 3px 3px 6px goldenrod, 0px 0px 0px black, 0px 2px 5px white;
+                text-align: center;
+                top: 71%;
+                background-attachment: fixed;
+            }
+            .layer3{
+                background-image: url("4y.jpg");
+                background-attachment: fixed;
+                animation:layer3Anim 12s infinite;
+            }
+            .layer3 p{
+                position: relative;
+                font-size: 34px;
+                color: blue;
+                text-shadow: 3px 3px 6px goldenrod, 0px 0px 0px black, 0px 2px 5px white;
+                text-align: center;
+                top: 71%;
+                background-attachment: fixed;
+            }
+            .layer4{
+                background-image: url("5y.jpg");
+                background-attachment: fixed;
+                animation:layer4Anim 12s infinite;
+            }
+            .layer4 p{
+                position: relative;
+                font-size: 34px;
+                color: blue;
+                text-shadow: 3px 3px 6px goldenrod, 0px 0px 0px black, 0px 2px 5px white;
+                text-align: center;
+                top: 65%;
+                background-attachment: fixed;
+            }
+            .layer5{
+                background-image: url("6y.jpg");
+                background-attachment: fixed;
+                animation:layer5Anim 12s infinite;
+            }
+            .layer5 p{
+                position: relative;
+                font-size: 34px;
+                color: blue;
+                text-shadow: 3px 3px 6px goldenrod, 0px 0px 0px black, 0px 2px 5px white;
+                text-align: center;
+                top: 71%;
+                background-attachment: fixed;
+            }
+            .back2{
+                opacity: 0.9
+  
+            }
+            
+            
+.sidebar{
+    width: 220px;
+    height: 445px;
+    background-color: goldenrod;
+    float: left;
+    margin-left: 5px;
+}
+ul#nav{
+    
+}
+ul#nav li{
+    list-style: none;
+    font-family: Arial;
+}
+ul#nav li a{
+    color: #ccc;
+    display: block;
+    padding: 20px;
+    font-size: 0.8em;
+    border-bottom: 1px solid #0A0A0A;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+ul#nav li a:hover{
+    background-color: #030303;
+    color: #fff;
+    
+}
+ul#nav li a.selected{
+   background-color: #030303;
+    color: #fff; 
+    
+}

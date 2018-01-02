@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>User Page</title>
+		<link rel="stylesheet" href="Admin.css">
+		<script src="jquery.min.js"></script>
+		<script>
+            $(document).ready(function(){
+                $('#vd1').click(function(){
+                       $.get('viewdoctor.php',function(result){
+                        $('#User').css('display','none');
+                        $('#resp').html(result);
+                       });
+                });
+            }); 
+        </script>
+	</head>
+	<style>
+	.select {
+    width: 150px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f1f1f1;
+   }
+	</style>
+<body>
+		<nav class="nav-main">
+ 			<ul>
+ 				<li class="active">
+ 					<span id="vd1" style="cursor:pointer" class="nav-item">View Doctors</span>
+ 				</li>
+ 				<li>
+ 					<a href="#" class="nav-item">Make Requset</a>
+ 				</li>
+ 				<li >
+ 					<a href="#" class="nav-item">Give Feedback</a>
+ 				</li>
+ 				<li>
+ 					<a href="e-healthcare.html" class="nav-item">Logout</a>
+ 				</li>
+ 			</ul>
+ 		</nav>
+ 		<div id="resp"  style="border:none; position: absolute; margin:100px 0px 5% 0px;width:100%;">
+        </div>
+        <div id="User">
+
+ 		</div>
+</body>
+</html>

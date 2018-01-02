@@ -1,0 +1,76 @@
+.bd{
+    text-align: center;
+    font-family: Imprint MT Shadow;
+    font-size: 50px;
+    margin-top: -120px;
+    color: silver;
+    text-shadow:1px 2px 1px blue,0px 0px 0px black,0px 4px 7px skyblue;
+}
+.maindiv{
+     background-image: url("20.jpg");
+    margin-left: 1px;
+    margin-right: 1px;
+    height:120px;
+    width: 1126px;
+}
+.maindiv1{
+    background-image: url("bk.jpg");
+}
+.para1{
+text-indent: 30px;
+text-height: auto;
+text-align: left;
+font-family: arial;
+font-size: 13px;
+color: red;
+font-weight: bold; 
+text-shadow:0px 1px 0px blue,0px 0px 0px black ,0px 4px 7px yellow;
+}
+.para{
+    font-family: arial;
+    font-size: 13px;
+    color: blue;
+    font-weight: bold;
+}
+
+            /*RESETS*/
+            *{
+                box-sizing: border-box;
+            }
+            html,body{
+                margin: 0;
+                padding: 0;
+            }
+            .slideshow{
+                position: relative;
+            }
+            .placeholder{
+                width: 100%;
+                visibility: hidden;
+            }
+            
+    
+div#box{
+    margin-top: 10px;
+    float: right;
+}
+div#box .box-top{
+    color: #fff;
+    text-shadow: 0px 1px 1px #ddd;
+    background-color: #2980b9;
+    padding: 5px;
+    padding-left: 15px;
+    font-weight: 300;
+    width: 450px;
+}
+div#box .box-panel{
+    padding: 15px;
+    background-color: #fff;
+    color: #333;
+    width: 450px;
+}
+.not{
+font-family: Arial;
+font-style: italic;
+padding: 5px;
+} 

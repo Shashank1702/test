@@ -1,0 +1,142 @@
+<html>
+	<head>
+	    <meta charset="UTF-8">
+  		<title>E-HEALTHCARE</title>
+  		<link rel="stylesheet" href="health.css">
+  		<link rel="stylesheet" href="login1.css">
+  		<link rel="stylesheet" type="text/css" href="slider.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+  		</script>
+<script>
+$(document).ready(function(){
+    $("#searchbtn").click(function(){
+        x=document.getElementById('searchinput').value;
+        alert(x);
+        $.post("search.php?s="+x,function(result){
+
+        });
+    });
+});
+</script>
+<script type="text/javascript">
+
+function Gsitesearch(curobj){
+curobj.q.value=curobj.qfront.value
+}
+
+</script>
+  		<script type="text/javascript">
+  			function showLogin(x){
+  				var t=document.getElementById(x).style.display;
+  				if(t=='none'){
+  				document.getElementById(x).style.display="block";
+  				}
+  				else{
+  					document.getElementById(x).style.display="none";
+  				}
+  			}
+  		</script>
+  					<script type="text/javascript" >
+
+					var image1 = new Image()
+					image1.src = "dc91.jpg"
+					var image2 = new Image()
+					image2.src = "dc12.jpg"
+					var image3 = new Image()
+					image3 .src = "dc13.jpg"
+
+					</script>
+					
+ 	</head>
+ 	<body><div id ="full">
+ 		<div style="height:150px;background-color:white; color:black; padding:2px; width: 99.7%">
+ 			<div class="topleft">
+ 				<img src="doc1.jpg" alt="icon">
+ 			</div>
+ 			<h1 style="font-family:Cambria; text-shadow:3px 3px 4px #222222;margin-left: 5px"">E-HEALTHCARE SYSTEM</h1>
+ 			<p style="font-family:Monotype Corsiva;font-size:20px;left:250px;margin-left: 30px">Health Care is a right, not a privilage</p>
+ 		</div>
+		<div class="div1">
+		<form action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
+			<table>
+				<tr>
+					<td><input name="qfront" type="text" style="width: 180px" /></td>
+					<td><input type="submit" value="Search" /></td>
+				</tr>
+			</table>
+
+
+
+<input name="q" type="hidden" />
+
+
+</form>
+			<span style="color:black;font-family:Monotype Corsiva;display:block;margin-top:10px;font-size:20px;">Contact Us : 980000000 , 7272054056</span>
+		</div>
+		
+		<div style="margin-top:33px;">
+ 		<nav class="nav-main">
+ 			<ul>
+ 				<li class="active">
+ 					<a href="#" class="nav-item">Home</a>
+ 				</li>
+ 				<li>
+ 					<a href="#" class="nav-item">About us</a>
+ 				</li>
+ 				<li>
+ 					<a href="login.html" target="_blank" class="nav-item">Admin login</a>
+ 				</li>
+ 				<li>
+ 					<a href="#" class="nav-item">Meditation</a>
+ 				</li>
+ 			</ul>
+ 		</nav>
+ 		</div>
+ 		<div style="margin:7px 10px 40px 1100px; position: absolute; border:none;">
+ 		<button  class="divDU" onclick="showLogin('lb');" >Doctor Login</button>
+
+ 		<button class="divDU" onclick="showLogin('lb1');" >User login</button>
+ 		</div>
+ 		
+		<div class="divImg" id="slider">
+		    <img src="dc91.jpg" name="slide" width="100%" height="300" />
+
+		<script type="text/javascript">
+
+		var step=1
+		function slideit(){
+		document.images.slide.src=eval("image"+step+".src")
+		if(step<3)
+			step++
+		else
+			step=1
+		setTimeout("slideit()", 2000);
+		}
+		slideit()
+
+		</script>
+		</div></div>
+		<div id="lb" class="modal">
+		
+ 		<div id="lb" class="modal-content" width="200px"><span id="close" class="close" onclick="document.getElementById('lb').style.display='none';">&times;</span></br></br>
+			<form id="f1" action="DrLogin.php">
+			<center><input type="text" placeholder="doctor's Id" name="did">
+			<input type="password" placeholder="password" name="pass2"></center>
+			<center><button type="submit" id="login-button" >login</button></center>
+			</form>
+
+		</div>
+		</div>
+		<div id="lb1" class="modal" width="200px">
+		<div id="d2" class="modal-content" ><span id="close" class="close" onclick="document.getElementById('lb1').style.display='none';">&times;</span></br></br>
+			<form id="f1" >
+			<center><input type="text" placeholder="username">
+			<input type="password" placeholder="password"></center>
+			<center><button type="submit" id="login-button" >login</button></center>
+			</form>
+		</div>
+		</div>	
+ 	</body>
+ 	
+</html>
+ 

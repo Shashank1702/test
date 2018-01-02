@@ -1,0 +1,85 @@
+body, html {
+	margin:0;
+	font:1em cambria;
+}
+table input
+{
+	outline: o;
+	border: 1px solid black;
+	width: 200px;
+	height:30px;
+	border-radius: 3px;
+	padding:10px 15px;
+	margin:10px auto 10px auto;
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	color: #53e3a6;	
+}
+
+table button{
+	background-color:lightgray;
+	outline: 0;
+	border:0;
+	padding: 3px 6px;
+	color:black;
+	border-radius: 5px;
+	width: 100px;
+	height:43px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+table button:hover{
+	background-color: #ff006e;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+.search{
+	display:block;
+	margin:-155px 50px 22px 1085px;
+	height: 18.8%; 
+	width: 20%;
+	border:solid black;
+	background-color: #53e3a6;
+}
+.topleft {
+    position: absolute;
+    top: 5px;
+    left: 370px;
+    font-size: 18px;
+    width: 380px;
+    height: 40%;
+    border-radius: 60%;
+    }
+
+.nav-main > ul {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style-type: none;
+	width:100%;
+	background-color: #f1f1f1;
+}
+.nav-main > ul > li{
+	float:left;
+}
+
+.nav-item {
+	display:inline;
+	font-family: Forte;
+	margin-left: 20px;
+	font-size: 20;
+	padding: 30px 45px;
+	height:40px;
+	line-height: 50px;
+	color:black;
+	text-decoration:none;
+}
+ 
+.nav-item:hover {
+	color:red;
+} 

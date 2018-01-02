@@ -1,0 +1,96 @@
+body{
+	font-family: sans-serif,Arial;
+	color: white;
+	font-weight: 300;
+	background-color: #53e3a6
+}
+.container{
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 80px 0;
+	height: 400px;
+	text-align: center;
+    margin-top: 5%;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+form input
+{
+	outline: o;
+	border: 1px solid rgba(200,200,200,200);
+	background-color: rgba(255,255,255,0.2);
+	width: 200px;
+	border-radius: 3px;
+	padding:10px 15px;
+	margin:10px auto 10px auto;
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	-wekit-transition-duration:0.25s;
+		   transition-duration:0.25s;
+	font-weight: 30;	
+}
+
+form input:hover
+{
+	background-color: white;
+}
+form input:focus{
+	background-color: white;
+	width: 210px;
+	color: #53e3a6;
+}
+form button{
+	background-color:white;
+	border: 1px solid rgba(200,200,200,200);
+	outline: 0;
+	border:0;
+	padding: 5px 10px;
+	color:#53e3a6;
+	border-radius: 3px;
+	width: 200px;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+form button:hover{
+	background-color: #ff006e;
+}

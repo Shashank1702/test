@@ -1,0 +1,32 @@
+.slideShow{
+	position: relative;
+}
+.placeHolder{
+	width: 100%;
+	visibility: hidden;
+}
+.layer1,.layer2,.layer3{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+.layer1
+{
+	background-image: url(slideShow/doc12.jpg);
+
+}
+.layer2
+{
+	background-image: url(slideShow/doc13.jpg); 
+animation: layer2Anim 10s infinite;
+}
+.layer3
+{
+	background-image: url(slideShow/doc91.jpg);
+animation: layer3Anim 10s infinite;
+}
